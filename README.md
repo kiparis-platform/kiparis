@@ -16,6 +16,10 @@ Kiparis is a cloud communication and integration platform for automated solution
 - **Innovation**: Stay ahead of the curve with the latest technologies, trends, and best practices in cloud communication and integration.
 - **Performance**: Achieve optimal performance and efficiency with the high-speed data processing and communication capabilities of Kiparis.
 
+## License
+
+This project is licensed under the [Business Source License 1.1](./LICENSE).
+
 ## Code of Conduct
 
 This project has adopted the code of conduct defined by the [Contributor Covenant](https://contributor-covenant.org) to clarify expected behavior in our community. For more information, see the [Code of Conduct](CODE_OF_CONDUCT.md).
