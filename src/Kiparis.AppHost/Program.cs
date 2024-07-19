@@ -18,6 +18,19 @@
 // MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, NON-INFRINGEMENT, AND
 // TITLE.
 
+using Aspire.Hosting.Dapr;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
+
 var builder = DistributedApplication.CreateBuilder(args);
+
+// Workaround for https://github.com/dotnet/aspire/issues/2219
+if (builder.Configuration.GetValue<string>("DAPR_CLI_PATH") is { } daprCliPath)
+{
+    builder.Services.Configure<DaprOptions>(options =>
+    {
+        options.DaprPath = daprCliPath;
+    });
+}
 
 builder.Build().Run();

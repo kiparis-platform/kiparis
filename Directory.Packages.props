@@ -6,6 +6,7 @@
   <ItemGroup>
     <!-- Aspire -->
     <PackageVersion Include="Aspire.Hosting.AppHost" Version="8.0.2" />
+    <PackageVersion Include="Aspire.Hosting.Dapr" Version="8.0.2" />
     <PackageVersion Include="Dapr.Client" Version="1.13.1" />
     <PackageVersion Include="Microsoft.Extensions.Hosting.Abstractions" Version="8.0.0" />
     <!-- ASP.NET Core -->
